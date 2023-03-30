@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Insert the value of the label");
+        String label = scanner.nextLine();
+        System.out.println("Insert the value of the rank");
+        String input = scanner.nextLine();
+        int ranks = Integer.parseInt(input);
+        if (ranks % 2 == 0) {
+            if (label.equals("a") || label.equals("c") || label.equals("e") || label.equals("g")) {
+                System.out.println("light");
+            }
+        } else if (label.equals("b") || label.equals("d") || label.equals("f") || label.equals("h")) {
+            System.out.println("light");
+        } else {
+            System.out.println("dark");
+        }
+    }
+}
